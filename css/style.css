@@ -470,9 +470,8 @@ html{
     text-align: center;
 }
 .conect ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .conect ul li{
     display: inline;
