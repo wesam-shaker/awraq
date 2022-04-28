@@ -298,7 +298,7 @@ html{
     width: 100%;
 }
 .the-team .feat .box-img img{
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
     -o-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -335,6 +335,7 @@ html{
 /* START projects */
 .projects{
     text-align: center;
+    padding: 20px 0;
 }
 .projects .container{
     display: grid;
@@ -400,13 +401,14 @@ html{
 .brief{
     text-align: center;
     background: #fff;
-    margin: 20px 0;
+    padding: 20px 0;
 }
 .brief p{
     color: #555;
     font-size: 16px;
     line-height: 3;
     letter-spacing: 0.8px;
+    display: block;
 }
 .brief p span{
     color: #000;
@@ -464,6 +466,14 @@ html{
 .client h3{
     font-size: 20px;
 }
+@media (max-width: 1000px){
+    .client .box-img{
+        width: 80px;
+    }
+    .client h3{
+        font-size: 16px;
+    }
+}
 /* START conect */
 .conect{
     background: #fff;
@@ -474,7 +484,7 @@ html{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .conect ul li{
-    display: inline;
+    list-style: none;
 }
 .conect ul li a {
     color: #000;
