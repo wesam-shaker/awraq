@@ -237,8 +237,8 @@ html{
 }
 /* START services */
 .services{
-    padding: 40px 0 100px 0;
     text-align: center;
+    
 }
 .head-h{
     font-size: 30px;
@@ -249,7 +249,7 @@ html{
 .head-h::after{
     content: '';
     background: var(--blue);
-    width: 3%;
+    width: 5%;
     height: 6px;
     border-radius: 5px;
     -o-border-radius: 5px;
@@ -262,8 +262,7 @@ html{
 }
 .services .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
 }
 .services .feat{
     width: 100%;
@@ -278,7 +277,8 @@ html{
 }
 .services .feat .box-img img{
     width: 100%;
-    min-height: 200px;
+    min-height: 100px;
+    max-height: 100px;
 }
 .services .feat .box-text{
     width: 100%;
@@ -289,9 +289,9 @@ html{
 }
 .services .feat .box-text p{
     width: 70%;
-    margin: 10px auto;
+    margin: 0 auto 10px auto;
     font-size: 16px;
-    height: 60px;
+    min-height: 250px;
 }
 /* START the-team */
 .the-team{
@@ -323,10 +323,18 @@ html{
 .the-team .feat .box-text h3{
     font-size: 20px;
     text-transform: capitalize;
+    margin: 0;
+}
+.the-team .feat .box-text h3+span{
+    text-transform: capitalize;
+    font-size: 15px;
+    color: var(--blue);
+    font-weight: bold;
+    margin-top: -10px;
+    display: block;
 }
 .the-team .feat .box-text .link{
     list-style: none;
-
 }
 .the-team .feat .box-text .link li{
     display: inline;
@@ -567,8 +575,9 @@ html{
     align-items: center;
     font-size: 18px;
 }
-.footer span{
+.footer span a{
     font-weight: bold;
+    text-decoration: none;
     color: var(--blue);
 }
 /* END FOOTER  */
