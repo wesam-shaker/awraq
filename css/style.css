@@ -440,16 +440,19 @@ html{
     padding: 20px 0;
 }
 .brief p{
-    color: #555;
+    color: #444;
     font-size: 16px;
-    line-height: 3;
+    line-height: 2.5;
     letter-spacing: 0.8px;
     display: block;
+    width: 80%;
+    margin: 20px auto;
 }
 .brief p span{
-    color: #000;
-    font-weight: bold;
+    color: #333;
+    font-weight: 800;
     letter-spacing: 0;
+    width: 50px;
 }
 /* END brief */
 /* START client */
@@ -529,7 +532,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 10px;
+    margin: 20px auto;
     background: #ddd;
     padding: 20px;
     border-radius: 5px;
@@ -540,6 +543,11 @@ html{
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
+}
+@media (max-width: 800px){
+    .conect ul li a {
+        width: 50%;
+    }
 }
 .conect ul li a:hover{
     transform: scale(1.1);
