@@ -9,7 +9,7 @@
 }
 :root{
     --bg: #ececec;
-    --blue: #6c6cfe;
+    --blue: #2596b3;
     --black: #000;
 }
 body{
@@ -605,4 +605,12 @@ html{
 }
 #myBtn img{
     width: 20px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    color: var(--blue);
+}
+.swiper-pagination-bullet-active{
+    background: var(--blue);
 }
